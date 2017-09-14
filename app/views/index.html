@@ -4,55 +4,33 @@
   UKVI services on GOV.UK
 {% endblock %}
 
+{% block service_name %} {% endblock %}
+
+
 {% block content %}
 
 <main id="content" role="main">
+  {% include "includes/phase_banner_alpha.html" %}
+
   <div class="grid-row">
     <div class="column-two-thirds">
 
       <h1 class="heading-xlarge">
         UKVI services on GOV.UK
-        <span class="heading-secondary">{{releaseVersion}}</span>
-      </h1>{{releaseVersion | log }}
+      </h1>
       <p>
-        This kit lets you rapidly create HTML prototypes of GOV.UK services.
+        Creating a simpler way of routing users to the service or information they need online.
       </p>
 
-      <p>
-        It contains all you need to prototype anything from simple static pages to complex, data-driven transactions.
-      </p>
-
-      <h2 class="heading-medium">About this page</h2>
-
-      <p>We recommend you add links to your prototype to this page, rather than delete it.
-        You'll find this page in the kit at '/app/views/index.html'.</p>
-      <p>You can change the service name by editing the file '/app/config.js'.</p>
-
-			<h2 class="heading-medium">Examples and documentation</h2>
+      <h2 class="heading-medium">List of stages</h2>
 
 			<ul class="list list-bullet">
-				<li><a href="/docs/tutorials-and-examples">Example pages and documentation</a></li>
-				<li><a href="https://github.com/alphagov/govuk_prototype_kit">GitHub</a></li>
-			</ul>
+				<li><a href="/navigation">Improved navigation</a></li>
+        <li><a href="http://localhost:8080/prototype_one/start">Check my visa options (questions)</a></li>
+        <li><a href="http://localhost:8080/prototype_two/visa_list">Check my visa options (filter)</a></li>
+        <li><a href="/check">Check whether you qualify for a visa</a></li>
+        <li><a href="/task">Stay in the UK task list</a></li>
 
-      <h2 class="heading-medium">Other resources</h2>
-
-			<ul class="list list-bullet">
-				<li>
-					<a href="https://govuk-elements.herokuapp.com/snippets/">
-						Guide to GOV.UK Elements
-					</a>
-				</li>
-				<li>
-					<a href="https://www.gov.uk/service-manual">
-						Service design manual
-					</a>
-				</li>
-				<li>
-					<a href="https://www.gov.uk/design-principles">
-						Government Digital Service Design Principles
-					</a>
-				</li>
 			</ul>
 
     </div>
