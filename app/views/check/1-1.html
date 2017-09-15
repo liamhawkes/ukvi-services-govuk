@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Start page example
+{% endblock %}
+
+{% block proposition_header %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block header_class %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+
+  <div class="breadcrumbs">
+      <ol>
+          <li><a href="https://www.gov.uk">Home</a></li>
+          <li><a href="../index.html">Visas and immigration</a></li>
+          <li>Stay in the UK</li>
+      </ol>
+  </div>
+
+  <div class="grid-row">
+    <div class="column-two-thirds">
+
+      <h1 class="heading-xlarge">
+        Check I qualify for Long Residence
+      </h1>
+
+      <p>Based on what you have told us, you would not qualify for long residence.</p>
+
+      <p>This is because....</p>
+
+      <p>
+        <a class="button button-continue" href="http://localhost:8080/prototype_two/visa_list" role="button">Find another option</a>
+      </p>
+
+    </div>
+    <div class="column-third">
+
+
+
+    </div>
+  </div>
+
+</main>
+
+{% endblock %}

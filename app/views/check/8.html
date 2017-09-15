@@ -1,0 +1,43 @@
+{% extends "layout.html" %} {% block page_title %} Check I qualify for Long Residence - GOV.UK {% endblock %} {% block service_name %} Check I qualify for Long Residence {% endblock %} {% block content %}
+
+<main id="content" role="main">
+    {% include "includes/phase_banner_alpha.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+            <a class="link-back" href="/check/7.html">Back</a>
+
+            <h1 class="heading-large">
+              Have you passed the Life in the UK Test?
+            </h1>
+
+            <form action="9" method="get" class="form">
+
+                <div class="form-group">
+                    <fieldset>
+
+                        <legend class="visually-hidden">Have you passed the Life in the UK Test?</legend>
+
+                        <div class="multiple-choice">
+                            <input id="liuk-yes" type="radio" name="liuk" value="yes">
+                            <label for="liuk-yes">yes</label>
+                        </div>
+                        <div class="multiple-choice">
+                            <input id="liuk-no" type="radio" name="liuk" value="no">
+                            <label for="liuk-no">no</label>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="form-group">
+                    <input class="button" type="submit" value="Continue">
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</main>
+
+{% endblock %}

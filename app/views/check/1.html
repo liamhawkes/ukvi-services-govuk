@@ -1,0 +1,45 @@
+{% extends "layout.html" %} {% block page_title %} Check I qualify for Long Residence - GOV.UK {% endblock %} {% block service_name %} Check I qualify for Long Residence {% endblock %} {% block content %}
+
+<main id="content" role="main">
+    {% include "includes/phase_banner_alpha.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+            <a class="link-back" href="/check/index.html">Back</a>
+
+            <h1 class="heading-large">
+                Do you have permission to stay (‘leave to remain’) in the UK?
+            </h1>
+
+            <p>This includes any immigration category, or a combination of categories.</p>
+
+            <form action="2" method="get" class="form">
+
+                <div class="form-group">
+                    <fieldset>
+
+                        <legend class="visually-hidden">Do you have permission to stay (‘leave to remain’) in the UK?</legend>
+
+                        <div class="multiple-choice">
+                            <input id="permissiontoremain-yes" type="radio" name="permissiontoremain" value="yes">
+                            <label for="permissiontoremain-yes">yes</label>
+                        </div>
+                        <div class="multiple-choice">
+                            <input id="permissiontoremain-no" type="radio" name="permissiontoremain" value="no">
+                            <label for="permissiontoremain-no">no</label>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="form-group">
+                    <input class="button" type="submit" value="Continue">
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</main>
+
+{% endblock %}

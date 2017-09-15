@@ -1,0 +1,69 @@
+{% extends "layout.html" %} {% block page_title %} Check I qualify for Long Residence - GOV.UK {% endblock %} {% block service_name %} Check I qualify for Long Residence {% endblock %} {% block content %}
+
+<main id="content" role="main">
+    {% include "includes/phase_banner_alpha.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+          <a class="link-back" href="/check/4.html">Back</a>
+
+            <h1 class="heading-large">
+                While you have been in the UK have you spent time in:
+            </h1>
+            <p>
+                Select all options that are relevant to you.
+            </p>
+
+            <form action="6" method="get" class="form">
+
+                <div class="form-group">
+                    <fieldset>
+
+                        <legend class="visually-hidden">While you have been in the UK have you spent time in:</legend>
+
+                        <div class="multiple-choice">
+                            <input id="timespent-prison" name="timespent" type="checkbox" value="prison">
+                            <label for="timespent-prison">prison</label>
+                        </div>
+                        <div class="multiple-choice">
+                            <input id="timespent-yoi" name="timespent" type="checkbox" value="yoi">
+                            <label for="timespent-yoi">young offender’s institution</label>
+                        </div>
+                        <div class="multiple-choice">
+                            <input id="timespent-securehospital" name="timespent" type="checkbox" value="securehospital">
+                            <label for="timespent-securehospital">secure hospital</label>
+                        </div>
+                        <div class="multiple-choice">
+                            <input id="timespent-roi" name="timespent" type="checkbox" value="roi">
+                            <label for="timespent-roi">Republic of Ireland</label>
+                        </div>
+                        <div class="multiple-choice">
+                            <input id="timespent-isleofman" name="timespent" type="checkbox" value="isleofman">
+                            <label for="timespent-isleofman">Isle of Man</label>
+                        </div>
+                        <div class="multiple-choice">
+                            <input id="timespent-channelislands" name="timespent" type="checkbox" value="channelislands">
+                            <label for="timespent-channelislands">Channel Islands</label>
+                        </div>
+                        <div class="multiple-choice">
+                            <input id="timespent-none" name="timespent" type="checkbox" value="none">
+                            <label for="timespent-none">none</label>
+                        </div>
+
+                    </fieldset>
+                </div>
+
+
+
+                <div class="form-group">
+                    <input class="button" type="submit" value="Continue">
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</main>
+
+{% endblock %}

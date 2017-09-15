@@ -1,0 +1,43 @@
+{% extends "layout.html" %} {% block page_title %} Check I qualify for Long Residence - GOV.UK {% endblock %} {% block service_name %} Check I qualify for Long Residence {% endblock %} {% block content %}
+
+<main id="content" role="main">
+    {% include "includes/phase_banner_alpha.html" %}
+
+    <div class="grid-row">
+        <div class="column-two-thirds">
+
+            <a class="link-back" href="/check/3.html">Back</a>
+
+            <h1 class="heading-large">
+              Have you been outside the UK for more than 180 days in any 12 months or for more than 540 days in total during your time in the UK?
+            </h1>
+
+            <form action="5" method="get" class="form">
+
+                <div class="form-group">
+                    <fieldset>
+
+                        <legend class="visually-hidden">Have you been outside the UK for more than 180 days in any 12 months or for more than 540 days in total during your time in the UK?</legend>
+
+                        <div class="multiple-choice">
+                            <input id="outside-yes" type="radio" name="outside" value="yes">
+                            <label for="outside-yes">yes</label>
+                        </div>
+                        <div class="multiple-choice">
+                            <input id="outside-no" type="radio" name="outside" value="no">
+                            <label for="outside-no">no</label>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="form-group">
+                    <input class="button" type="submit" value="Continue">
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+</main>
+
+{% endblock %}
